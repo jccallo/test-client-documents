@@ -8,9 +8,13 @@ const count = ref(0)
 
 <template>
   <h1>{{ msg }}</h1>
+  <BButton>Button</BButton>
+<BButton variant="danger">Button</BButton>
+<BButton variant="success">Button</BButton>
+<BButton variant="outline-primary">Button</BButton>
 
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <button type="button" class="btn btn-primary" @click="count++">count is {{ count }}</button>
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
